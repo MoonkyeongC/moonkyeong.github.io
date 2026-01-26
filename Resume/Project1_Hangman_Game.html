@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="eng">
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Project 1: Hangman Game</title>
     </head>
 
@@ -24,47 +25,52 @@
             <section>
                 <h2>Skills Learned</h2>
                 <ol>
-                    <li>File I/O</li>
-                    <ul>
-                        <li>Open a file for reading data</li>
-                        <li>Read strings sequentially from a file</li>
-                        <li>Handle file operations within a loop structure</li>
-                        <li>Properly close files to prevent memory leaks</li>
-                        <li>Work with external data sources to make programs more flexible and dynamic</li>
-                    </ul>
-                    <li>String Manipulation and Character Processing</li>
-                    <ul>
-                        <li>Using strlen() to determine string lengths for array bounds</li>
-                        <li>Implementing strcmp() for comparing strings</li>
-                        <li>Creating and modifying C-style strings</li>
-                        <li>Converting characters for case-insensitive comparison</li>
-                        <li>Iterating through strings using both for loops and while loops with termination conditions</li>
-                        <li>Properly terminating strings with '\0' after modification</li>
-                    </ul>
-                    <li>Array Management and Memory Handling</li>
-                    <ul>
-                        <li>Declaring arrays with fixed sizes</li>
-                        <li>Passing arrays to functions and understanding they decay to pointers</li>
-                        <li>Using arrays to track game state (the letters guessed that is in the word and the total letters guessed)</li>
-                        <li>Ensuring array bounds are respected (e.g., guessedLetters[len + 1] = '\0')</li>
-                        <li>Distinguishing between character arrays and strings in C</li>
-                    </ul>
-                    <li>Function Design and Modular Programming</li>
-                    <ul>
-                        <li>Creating clear function prototypes for better code organization</li>
-                        <li>Designing functions with single, well-defined responsibilities</li>
-                        <li>Using return values effectively to communicate results</li>
-                        <li>Passing parameters appropriately (by value vs. by reference)</li>
-                        <li>The importance of separating game logic into distinct functions (playRound, updateStarWord, etc.)</li>
-                    </ul>
-                    <li>Game State Management</li>
-                    <ul>
-                        <li>Maintaining strike count and checking against maximum</li>
-                        <li>Tracking consecutive correct guesses</li>
-                        <li>Monitoring which letters have been guessed</li>
-                        <li>Updating the masked word representation</li>
-                        <li>Determining win/lose conditions</li>
-                    </ul>
+                    <li>File I/O
+                        <ul>
+                            <li>Open a file for reading data</li>
+                            <li>Read strings sequentially from a file</li>
+                            <li>Handle file operations within a loop structure</li>
+                            <li>Properly close files to prevent memory leaks</li>
+                            <li>Work with external data sources to make programs more flexible and dynamic</li>
+                        </ul>
+                    </li>
+                    <li>String Manipulation and Character Processing
+                        <ul>
+                            <li>Using strlen() to determine string lengths for array bounds</li>
+                            <li>Implementing strcmp() for comparing strings</li>
+                            <li>Creating and modifying C-style strings</li>
+                            <li>Converting characters for case-insensitive comparison</li>
+                            <li>Iterating through strings using both for loops and while loops with termination conditions</li>
+                            <li>Properly terminating strings with '\0' after modification</li>
+                        </ul>
+                    </li>
+                    <li>Array Management and Memory Handling
+                        <ul>
+                            <li>Declaring arrays with fixed sizes</li>
+                            <li>Passing arrays to functions and understanding they decay to pointers</li>
+                            <li>Using arrays to track game state (the letters guessed that is in the word and the total letters guessed)</li>
+                            <li>Ensuring array bounds are respected (e.g., guessedLetters[len + 1] = '\0')</li>
+                            <li>Distinguishing between character arrays and strings in C</li>
+                        </ul>
+                    </li>
+                    <li>Function Design and Modular Programming
+                        <ul>
+                            <li>Creating clear function prototypes for better code organization</li>
+                            <li>Designing functions with single, well-defined responsibilities</li>
+                            <li>Using return values effectively to communicate results</li>
+                            <li>Passing parameters appropriately (by value vs. by reference)</li>
+                            <li>The importance of separating game logic into distinct functions (playRound, updateStarWord, etc.)</li>
+                        </ul>
+                    </li>
+                    <li>Game State Management
+                        <ul>
+                            <li>Maintaining strike count and checking against maximum</li>
+                            <li>Tracking consecutive correct guesses</li>
+                            <li>Monitoring which letters have been guessed</li>
+                            <li>Updating the masked word representation</li>
+                            <li>Determining win/lose conditions</li>
+                        </ul>
+                    </li>
                 </ol>
             </section>
         </main>

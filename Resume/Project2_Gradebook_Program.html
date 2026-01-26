@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="eng">
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Project 2: Gradebook Program</title>
     </head>
 
@@ -11,7 +12,7 @@
         </header>
 
         <main>
-            <img src="images/gradebook program example.png"  alt="An example of the gradebook program running" width="500" height="600">
+            <img src="Images/gradebook_program_example.png" alt="An example of the gradebook program running" width="500" height="600">
 
             <section>
                 <h2>Description</h2>
@@ -23,46 +24,51 @@
             <section>
                 <h2>Skills Learned</h2>
                 <ol>
-                    <li>Data Structure Design and Organization</li>
-                    <ul>
-                        <li>Create hierarchical structs with typedef</li>
-                        <li>Design nested data structures where gradebook_t contains an array of student_t structs</li>
-                        <li>Group related data fields (ID, name, homework, quiz, exam averages) into logical units</li>
-                        <li>Understand memory layout of structs and how they've been passed between functions</li>
-                        <li>Implement fixed-sized array storage for manageable data sets</li>
-                    </ul>
-                    <li>Memory Management and State Tracking</li>
-                    <ul>
-                        <li>Using sentinel values (-1.0) to represent missing/uninitialized data</li>
-                        <li>Implementing a counter variable to track active array elements</li>
-                        <li>Shifting array elements during deletion to maintian contiguous storage</li>
-                        <li>Preventing array overflow with boundary checking</li>
-                        <li>Passing pointers to functions to modify original data rather than copies</li>
-                    </ul>
-                    <li>Algorithm Design and Implementation</li>
-                    <ul>
-                        <li>Finding students by ID across the array (linear search algorithm)</li>
-                        <li>Shifting elements during removal operations (array manipulation)</li>
-                        <li>Creating non-repeating random numbers with validation</li>
-                        <li>Determining missing grades and weighted averages</li>
-                        <li>Checking for valid student IDs before operations</li>
-                    </ul>
-                    <li>Program Architecture and Flow Control</li>
-                    <ul>
-                        <li>Main menu loop that conintues until exit condition</li>
-                        <li>Nested function calls within menu options</li>
-                        <li>Multiple exit poitns from functions based on conditions</li>
-                        <li>State tracking across multiple functions using shared data structures</li>
-                        <li>Error handling with appropriate user feedback</li>
-                    </ul>
-                    <li>CRUD Operations Implementation</li>
-                    <ul>
-                        <li>Create: Adding new students with generated IDs</li>
-                        <li>Read: Displaying students, searching by ID, listing all entries</li>
-                        <li>Update: Modifying grade information for existing students</li>
-                        <li>Delete: Removing students and shifting array elements</li>
-                        <li>Complete lifecycle management of data records</li>
-                    </ul>
+                    <li>Data Structure Design and Organization
+                        <ul>
+                            <li>Create hierarchical structs with typedef</li>
+                            <li>Design nested data structures where gradebook_t contains an array of student_t structs</li>
+                            <li>Group related data fields (ID, name, homework, quiz, exam averages) into logical units</li>
+                            <li>Understand memory layout of structs and how they've been passed between functions</li>
+                            <li>Implement fixed-sized array storage for manageable data sets</li>
+                        </ul>
+                    </li>
+                    <li>Memory Management and State Tracking
+                        <ul>
+                            <li>Using sentinel values (-1.0) to represent missing/uninitialized data</li>
+                            <li>Implementing a counter variable to track active array elements</li>
+                            <li>Shifting array elements during deletion to maintian contiguous storage</li>
+                            <li>Preventing array overflow with boundary checking</li>
+                            <li>Passing pointers to functions to modify original data rather than copies</li>
+                        </ul>
+                    </li>
+                    <li>Algorithm Design and Implementation
+                        <ul>
+                            <li>Finding students by ID across the array (linear search algorithm)</li>
+                            <li>Shifting elements during removal operations (array manipulation)</li>
+                            <li>Creating non-repeating random numbers with validation</li>
+                            <li>Determining missing grades and weighted averages</li>
+                            <li>Checking for valid student IDs before operations</li>
+                        </ul>
+                    </li>
+                    <li>Program Architecture and Flow Control
+                        <ul>
+                            <li>Main menu loop that conintues until exit condition</li>
+                            <li>Nested function calls within menu options</li>
+                            <li>Multiple exit poitns from functions based on conditions</li>
+                            <li>State tracking across multiple functions using shared data structures</li>
+                            <li>Error handling with appropriate user feedback</li>
+                        </ul>
+                    </li>
+                    <li>CRUD Operations Implementation
+                        <ul>
+                            <li>Create: Adding new students with generated IDs</li>
+                            <li>Read: Displaying students, searching by ID, listing all entries</li>
+                            <li>Update: Modifying grade information for existing students</li>
+                            <li>Delete: Removing students and shifting array elements</li>
+                            <li>Complete lifecycle management of data records</li>
+                        </ul>
+                    </li>
                 </ol>
             </section>
         </main>
