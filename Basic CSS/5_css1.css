@@ -1,0 +1,66 @@
+body {
+    background-color: lightblue;
+
+    h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 55px;
+    }
+
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    #paragraph2 {
+        background: white;
+        outline: green solid 4px;
+        margin: 22px;
+        margin-right: 650px;
+        padding: 20px 38px;
+        text-align: center;
+        line-height: 2.0;
+    }
+
+    .blue {
+        background: darkblue;
+        outline: black solid 1px;
+        color: white;
+        padding: 20px 24px;
+    }
+
+    ol {
+        list-style: none;
+        counter-reset: num;
+        
+    }
+    ol li {
+        counter-increment: num;
+        margin-left: -38px;
+    }
+    ol li::before{
+        content: "0" counter(num) ". ";
+    }
+
+    a[href="http://www.w3schools.com"] {
+        color: darkred;
+    }
+
+    table {
+        background-color: white;
+        border-collapse: collapse;
+    }
+    td, th {
+        border: 1px solid;
+        padding: 8px;
+    }
+    th {
+        background-color: lightgray;
+        padding: 2px;
+    }
+}
+
