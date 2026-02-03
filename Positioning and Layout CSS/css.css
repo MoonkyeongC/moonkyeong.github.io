@@ -10,6 +10,19 @@ header {
     height: auto;
 }
 
+header p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header nav button {
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 125px;
+}
+
 #jumpMenu {
     position: fixed;
     left: 0;
@@ -18,12 +31,15 @@ header {
     background-color: rgb(245, 172, 174);
     height: 100%;
     text-align: center;
-    line-height: 2;
+}
+
+#jumpMenu a {
+    line-height: 3.5;
 }
 
 main {
     margin-left: 200px;
-    padding-top: 120px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,9 +48,9 @@ main {
 #container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    background-color: rgb(144, 213, 238);
     justify-content: center;
-    padding: 10px;
+    padding: 25px;
+    margin-top: -18px;
     gap: 40px;
 }
 
@@ -45,4 +61,5 @@ main {
     border: 3px solid lightgray;
     background: lightyellow;
     padding: 30px;
+    border-radius: 4px;
 }
