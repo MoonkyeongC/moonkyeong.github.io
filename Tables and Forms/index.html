@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Ordering Form</title>
+</head>
+<body>
+<h1>Pizza Ordering Form</h1>
+
+<h2>Contact Information</h2>
+
+<form>
+    <label for="name"> Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="phone"> Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+    <label for="email"> Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <h2>Select Pizza Size</h2>
+
+    <label for="size"> Pizza Size:</label>
+    <select name="size" id="size" required>
+        <option value="" disabled selected>--Select Size--</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>XLarge</option>
+    </select><br>
+
+    <h2>Select Sauce</h2>
+    <input type="radio" id="mariana" name="sauce" required>
+    <label for="mariana">Mariana</label><br>
+
+    <input type="radio" id="ranch" name="sauce">
+    <label for="ranch">Ranch</label><br>
+
+    <input type="radio" id="no_sauce" name="sauce">
+    <label for="no_sauce">No Sauce</label><br>
+
+    <h2>Select Toppings</h2>
+    <input type="checkbox" id="pepperoni">
+    <label for="pepperoni">Pepperoni</label>
+
+    <input type="checkbox" id="sausage">
+    <label for="sausage">Sausage</label><br>
+
+    <input type="checkbox" id="mushroom">
+    <label for="mushroom">Mushroom</label>
+
+    <input type="checkbox" id="pineapple">
+    <label for="pineapple">Pineapple</label><br>
+
+    <input type="checkbox" id="peppers">
+    <label for="peppers">Peppers</label>
+
+    <input type="checkbox" id="onions">
+    <label for="onions">Onions</label><br>
+
+    <h2>Additional Instructions</h2>
+    <textarea name="instructions">Add instructions</textarea>
+    <br><input type="submit" value="Submit"><br><br><br>
+</form>
+
+
+<table border=1>
+    <caption>List of My Favorite Games</caption>
+    
+    <thead>
+        <tr>
+            <th>Developer</th>
+            <th>Title</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="3">Bungie</td>
+            <td>Halo</td>
+            <td>2001</td>
+        </tr>
+
+        <tr>
+            <td>Halo2</td>
+            <td>2004</td>
+        </tr>
+
+        <tr>
+            <td>Halo 3</td>
+            <td>2007</td>
+        </tr>
+
+        <tr>
+            <td>Mojang</td>
+            <td>Minecraft</td>
+            <td>2011</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Count:4</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
