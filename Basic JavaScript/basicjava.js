@@ -21,7 +21,7 @@ function runForLoop() {
 
 function showOddNumbers() {
     let text = "";
-    for (let i = 0; i <= currValue; i++) {
+    for (let i = 0; i < currValue; i++) {
         i += 1;
         text += i + " ";
     }
