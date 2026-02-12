@@ -1,0 +1,216 @@
+
+#showArea
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#toggleButtons
+{
+    margin: auto;
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+#toggleButtons > *
+{
+    height: 50px;
+    border-radius: 10px;
+}
+
+form#newContent{
+    display: none;
+    flex-direction: column;
+    margin: auto;
+    width: 75%;
+    align-items: center;
+}
+
+form#filterContent{
+    display: block;
+    margin: auto;
+}
+
+.formRow
+{
+    width: 400px;
+    font-size: 1.3em;
+}
+
+article.opinion{
+    border: 1px solid red;
+}
+
+article.recipe{
+    border: 1px solid lightskyblue;
+}
+
+article.update{
+    border: 1px solid lightseagreen;
+}
+
+.marker
+{
+    float:right;
+    font-size: 1.5em;
+}
+
+.date
+{
+    float:left;
+    font-size: 1.5em;
+}
+
+
+.opinion .marker
+{
+    background-color: red;
+}
+
+.recipe .marker
+{
+    background-color: lightskyblue;
+}
+
+.update .marker
+{
+    background-color: lightseagreen;
+}
+
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
+main h1
+{
+    text-align: center;
+    font-size: clamp(12px, 4vw, 24px);
+}
+
+
+header{
+    background-color: goldenrod;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    font-size: 2.5vw;
+    width: 100%;
+    margin: 0;
+    border: 1px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main > div#articleList
+{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+article{
+    width: 30%;
+    margin-left:1.5%;
+    margin-right: 1.5%;
+    text-align: justify;
+    font-size: clamp(8px, 1.5vw, 12px);
+    border-radius: 5px;
+}
+
+
+
+footer
+{
+    padding-top: 5vh;
+    font-size: 2vw;
+    padding-bottom: 10vh;
+    color: white;
+    background-color: black;
+}
+
+a:visited
+{
+    color: darkblue;
+}
+
+footer p{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    
+}
+
+address > div
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+nav button
+{
+    color:white;
+    background-color: blue;
+    text-decoration: none;
+    font-size: 1.5vw;
+    display: inline;
+    width: 20%;
+    padding: 1vw 0vw;
+    text-wrap-mode: nowrap;
+}
+
+nav button:hover{
+    background-color:darkgoldenrod;
+}
+
+nav button:active{
+    background-color: gold;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    article{
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    main{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+    }
+}
