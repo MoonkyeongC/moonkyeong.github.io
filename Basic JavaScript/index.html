@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Basic JavaScript Exercises</title>
+	</head>
+	
+	
+	<body>
+		<h1>Basic JavaScript Exercises</h1>
+
+		<p>Current Counter: <span id="counter">0</span></p>
+		
+		<hr>
+		
+		<h2>1pt: Simple Functions</h2>
+		<p>When the 'increase' button is clicked, increment the counter above.<br>
+			When the 'decrease' button is clicked, decrement the counter above.</p>
+		<button onclick="tickUp()">Increase Counter</button>
+		<button onclick="tickDown()">Decrease Counter</button>
+		
+		<hr>
+		
+		<h2>1pt: Simple For Loop</h2>
+		<p>When this button is clicked, display in the designated area below<br>
+		every number from 0 up to and including the counter above.</p>
+		<button onclick="runForLoop()">Run For Loop</button>
+		
+		<p>Result: <span id="forLoopResult"></span></p>
+		
+		<hr>
+		
+		<h2>1pt: Repetition with Condition</h2>
+		<p>When this button is clicked, display in the designated area below<br>
+		all odd numbers from 1 to the counter above.</p>
+		<button onclick="showOddNumbers()">Show Odd Numbers</button>
+		
+		<p>Result: <span id="oddNumberResult"></span></p>
+		
+		<hr>
+		
+		<h2>1pt: Arrays</h2>
+		<p>When this button is clicked, add every multiple of 5 up to the counter (above)<br>
+		to an array in reverse order.  Then <em>print the array to console</em>.<br>
+		NOTE: print the array itself, not the contents of the array.<br>
+		If the number is &lt; 5, then it should print an empty array</p>
+		<button onclick="addMultiplesToArray()">Array of Reverse Order Multiples of 5</button>
+		
+		<hr>
+		
+		<h2>2pts: Objects and Form Fields</h2>
+		<label for="carType">Car Type</label> <input id="carType" type="text"><br>
+		<label for="carMPG">Car MPG</label> <input id="carMPG" type="text"><br>
+		<label for="carColor">Car Color</label> <input id="carColor" type="text"><br>
+		<br>
+		
+		<button type="button" onclick="printCarObject()">Print Car Object</button>
+		
+		<hr>
+		
+		<h2>2pts: Objects and Form Fields pt. 2</h2>
+		<p>When either of these buttons are clicked,<br>
+		load the data from the car objects <em>found in the footer of this HTML</em><br>
+		into the form above.<br>
+		<button type="button" onclick="loadCar(1)">Load Car 1</button>
+		<button type="button" onclick="loadCar(2)">Load Car 2</button>
+		<button type="button" onclick="loadCar(3)">Load Car 3</button>
+		
+		<hr>
+		
+		<h2>2pt: Changing Styles</h2>
+		<p id="styleParagraph">When either of these buttons are clicked,<br>
+		the text color of this paragraph (and only this paragraph) should change<br>
+		to the color described by the button text.</p>
+		
+		<button type="button" onclick="changeColor(1)">Red</button>
+		<button type="button" onclick="changeColor(2)">Green</button>
+		<button type="button" onclick="changeColor(3)">Blue</button>
+	
+	
+		<footer>
+			<!-- change the src value to use your own script -->
+			<script src="basicjava.js">
+			</script>
+			<script>
+				let carObject1 = {cType: "sedan", cMPG: "32", cColor: "blue"};
+				let carObject2 = {cType: "truck", cMPG: "28", cColor: "red"};
+				let carObject3 = {cType: "van", cMPG: "30", cColor: "green"};
+			</script>
+		</footer>
+	</body>
+	
+	
+</html>
