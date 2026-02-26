@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pokemon Website</title>
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+<div class="nintendo">
+
+    <!-- TOP SCREEN -->
+    <div class="top-screen">
+        <div class="top-content">
+
+            <h1>Build Your Pokémon Team!</h1>
+
+            <div class="search-bar">
+                <input type="text" id="nameID" placeholder="Enter Pokémon name or ID">
+                <button onclick="findPokemon()" type="button">Search</button>
+            </div>
+
+            <div class="pokemon-display">
+                <img id="pokemonImage" src="" alt="Pokemon Image"/>
+                
+                <div class="moves-panel">
+                    <select id="move1" class="moveSelect"></select>
+                    <select id="move2" class="moveSelect"></select>
+                    <select id="move3" class="moveSelect"></select>
+                    <select id="move4" class="moveSelect"></select>
+
+                    <button onclick="addPokemon()" type="button" class="add-btn">
+                        Add to Team
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- BOTTOM SCREEN -->
+    <div class="bottom-screen">
+        <div id="teamContainer">
+            <!-- Pokemon added here dynamically -->
+        </div>
+    </div>
+
+        <!-- LEFT CONTROLS -->
+    <div class="circle-pad"></div>
+    <div class="dpad">
+        <div class="dpad-vertical"></div>
+        <div class="dpad-horizontal"></div>
+    </div>
+
+    <!-- RIGHT BUTTONS -->
+    <div class="abxy">
+        <div class="btn x">X</div>
+        <div class="btn y">Y</div>
+        <div class="btn a">A</div>
+        <div class="btn b">B</div>
+    </div>
+
+
+    <div class="power-btn"></div>
+
+    <!-- SPEAKER -->
+    <div class="speaker"></div>
+
+</div>
+
+</body>
+</html>
